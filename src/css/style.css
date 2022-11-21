@@ -1,0 +1,90 @@
+@import "color.css";
+
+body {
+  background: var(--global-background);
+}
+.text-center {
+  background-color: transparent;
+}
+
+.form-control,
+.btn-primary {
+  border: none;
+}
+
+.form-control span {
+  padding: 5%;
+}
+
+.form-control span,
+.btn-primary {
+  color: var(--global-font);
+}
+
+.btn-primary {
+  background: var(--global-options);
+  margin-bottom: 30px;
+  border-radius: 15px !important;
+
+  width: 460px;
+  height: 50px;
+}
+
+.btn-primary:hover,
+.footer-btn:hover {
+  -webkit-transition: linear 0.4s;
+  -moz-transition: linear 0.4s;
+  -o-transition: linear 0.4s;
+  transition: linear 0.4s;
+  color: var(--global-options);
+  background: var(--global-btn);
+}
+
+.minilogo svg {
+  width: 100px;
+}
+
+.btn-confirm {
+  min-width: 360px;
+}
+
+.btn-confirm,
+.footer-btn {
+  background-color: var(--global-bottom-confirm);
+  color: var(--global-options);
+  border-radius: 15px;
+  height: 50px;
+  border: none;
+}
+
+.foot-bar {
+  background-color: var(--global-options);
+  height: 120px;
+  width: 100%;
+}
+
+.footer-btn {
+  width: 280px;
+}
+
+.questions form {
+  margin-top: 10%;
+}
+
+.btn-div {
+  padding: 0 10px 0 10px;
+}
+.btn-close {
+  border-radius: 100%;
+  padding: 5px;
+}
+
+.progress {
+  background-color: var(--global-background);
+  box-shadow: 1px 1px 8px 2px rgb(200, 200, 200);
+  width: 120px;
+}
+.progress-status {
+  width: 70%;
+  background-color: var(--global-bottom-confirm);
+}
