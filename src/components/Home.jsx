@@ -6,7 +6,7 @@ import { QuizContext } from "../context/quiz";
 
 function Home() {
 
-    const [dispatch] = useContext(QuizContext);
+  const [quizState, dispatch] = useContext(QuizContext);
 
   return (
     <>
@@ -48,23 +48,14 @@ function Home() {
               <div className="btn-group row">
                 <form>
                   <span>Escolha um nivel</span>
-                  <input
-                    className="btn-primary col-4 mt-3"
-                    type="button"
-                    value="Fácil"
-                  />
-                  <input
-                    className="btn-primary col-4"
-                    type="button"
-                    value="Médio"
-                  />
-                  <input
-                    className="btn-primary col-4"
-                    type="button"
-                    value="Difícil"
-                  />
+                  <button className="btn-primary col-4 mt-3" onClick={() => dispatch({type: "CHOOSE_LEVEL", payload: "Fácil"})}>Fácil</button>
+
+                  <button className="btn-primary col-4 mt-3" onClick={() => dispatch({type: "CHOOSE_LEVEL", payload: "Médio"})}>Médio</button>
+
+                  <button className="btn-primary col-4 mt-3" onClick={() => dispatch({type: "CHOOSE_LEVEL", payload: "Difícil"})}>Difícil</button>
+
                   <div className="btn-div ">
-                    <button className="btn-confirm" onClick={() => dispatch({type: "CHANGE_STATE"})}>Vamos Lá</button>
+                    <button className="btn-confirm" onClick={() => dispatch({type: "START_GAME"})}>Vamos Lá</button>
                   </div>
                 </form>
               </div>

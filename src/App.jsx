@@ -9,8 +9,8 @@ function App() {
 
   return (
     <div className="App">
-      {quizState.gameStage === "Home" && <Formulario/>}
-      {quizState.gameStage === "Quiz" && <Home/>}
+      {quizState.gameStage === "Home" && <Home/>}
+      {quizState.gameStage === "Quiz" && <Formulario/>}
     </div>
   );
 }

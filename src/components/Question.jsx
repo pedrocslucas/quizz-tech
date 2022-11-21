@@ -25,10 +25,23 @@ function Question() {
           </span>
           <form>
             {currentQuestion.options.map((option) => (
-              <Option option={option} key={option} answer={currentQuestion.answer} selectOption={() => onSelectOption(option)}/>
+              <Option option={option} 
+              key={option} 
+              answer={currentQuestion.answer} 
+              selectOption={() => onSelectOption(option)}/>
             ))}
           </form>
+          {!quizState.answerSelected && !quizState.help && (
+            <>
+              {currentQuestion.tip && (
+                <button className="btn-primary-tip" onClick={() => dispatch({type: "SHOW_TIP"})}>Dica</button>
+              )}
+            </>
+          )}
         </div>
+        {!quizState.answerSelected && quizState.help === "tip" && (
+          <p>{currentQuestion.tip}</p>
+        )}
       </div>
     </>
   );
