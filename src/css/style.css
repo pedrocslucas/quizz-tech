@@ -86,7 +86,7 @@ body {
   width: 120px;
 }
 .progress-status {
-  width: 70%;
+  width: 20%;
   background-color: var(--global-bottom-confirm);
 }
 

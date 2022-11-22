@@ -8,12 +8,12 @@ function Footer() {
 
   return (
     <>
-      <div className="fixed-bottom foot-bar">
+      <div className="foot-bar">
         <div className="container">
           <div className="row justify-content-md-between align-items-center">
             <div className="navbar ">
               <div className="progress mt-4">
-                <div className="progress-status "></div>
+                <div className="progress-status " ></div>
               </div>
               {quizState.answerSelected && (
                 <div className="btn-div ">

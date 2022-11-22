@@ -1,7 +1,7 @@
 import { createContext, useReducer } from "react";
 import questions from '../data/questions';
 
-const STAGES = ["Home", "Quiz"]
+const STAGES = ["Home", "Quiz", "EndGame"]
 
 const initialState = {
     gameStage: STAGES[0],
@@ -44,7 +44,7 @@ const quizReducer = (state, action) => {
             }
         }
         
-        case "START_GAME": {
+        case "NEW_GAME": {
             return initialState;
         }
         
@@ -69,7 +69,7 @@ const quizReducer = (state, action) => {
             return{
                 ...state,
                 currentQuestion: nextQuestion,
-                gameStage: endGame ? STAGES[0] : state.gameStage,
+                gameStage: endGame ? STAGES[2] : state.gameStage,
                 answerSelected: false,
                 levelSelected: false,
                 help: false,
@@ -87,6 +87,7 @@ const quizReducer = (state, action) => {
             if(answer === option)
                 correctAnswer = 1;
 
+            console.log(state.score)
             return{
                 ...state,
                 score: state.score + correctAnswer,
