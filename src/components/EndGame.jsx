@@ -12,12 +12,12 @@ function EndGame(){
         <>
             <Navbar/>
             <div className="container text-center">
-                <p className="h2">
+                <p className="text-score">
                     Sua Pontuação foi de: {quizState.score} / 5
                 </p>
             </div>
             <div className="btn-div d-flex">
-                <button className="btn-primary align-items justify-content-center mt-5" onClick={() => dispatch({type: "NEW_GAME"})}>Reiniciar</button>
+                <button className="btn-primary align-items-center justify-content-center mt-5" onClick={() => dispatch({type: "NEW_GAME"})}>Reiniciar</button>
             </div>
             <Footer/>
         </>

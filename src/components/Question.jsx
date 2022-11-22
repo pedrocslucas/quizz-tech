@@ -40,7 +40,9 @@ function Question() {
           )}
         </div>
         {!quizState.answerSelected && quizState.help === "tip" && (
-          <p>{currentQuestion.tip}</p>
+          <p className="h5 text-center p-3">
+            {currentQuestion.tip}
+          </p>
         )}
       </div>
     </>
