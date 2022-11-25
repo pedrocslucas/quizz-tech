@@ -4,7 +4,9 @@ body {
   background: var(--global-background);
 }
 
-.h4, .h5, .text-score {
+.h4,
+.h5,
+.text-score {
   font-family: monospace;
 }
 
@@ -26,6 +28,7 @@ body {
   border: none;
 }
 
+
 .form-control span {
   padding: 5%;
 }
@@ -35,7 +38,7 @@ body {
   color: var(--global-font);
 }
 
-.btn-primary, .btn-primary-tip {
+.btn-primary {
   background: var(--global-options);
   margin: auto;
   margin-bottom: 30px;
@@ -110,6 +113,29 @@ body {
   border: none;
 }
 
-.btn-primary-tip:hover {
-  background-color: #f3ae53;
+.Tips {
+  background-color: #ffbb2f;
+  color: white;
+  text-shadow: black;
+  font-size: 20px;
+}
+
+.Tips:hover {
+  background-color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .form-control {
+    width: 100%;
+  }
+  .btn-primary,
+  .Tips {
+    width: 300px;
+  }
+  .footer-btn {
+    width: 200px;
+  }
+  .progress{
+    width: 80px;
+  }
 }

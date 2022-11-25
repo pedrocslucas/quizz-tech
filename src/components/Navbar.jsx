@@ -1,8 +1,10 @@
 import React from "react";
+import CloseButton from "react-bootstrap/CloseButton";
 
 function Navbar() {
-  return <>
-  <div className="navbar">
+  return (
+    <>
+      <div className="navbar">
         <div className="container">
           <div className="minilogo">
             <svg
@@ -36,11 +38,13 @@ function Navbar() {
           </div>
 
           <div className="close-window">
-            <input className="btn-close" type="button" value="" />
+            <CloseButton onClick={() => window.location.reload()}
+            />
           </div>
         </div>
       </div>
-  </>;
+    </>
+  );
 }
 
 export default Navbar;
