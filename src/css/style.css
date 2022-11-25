@@ -76,6 +76,8 @@ body {
   background-color: var(--global-options);
   height: 120px;
   width: 100%;
+  bottom: 0;
+  position: fixed;
 }
 
 .footer-btn {

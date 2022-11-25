@@ -13,7 +13,6 @@ function Formulario() {
       <Navbar/>
       <Question/>
       <Footer/>
-
     </>
   );
 }

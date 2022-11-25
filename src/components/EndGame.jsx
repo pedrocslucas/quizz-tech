@@ -5,6 +5,8 @@ import { QuizContext } from "../context/quiz";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+
 function EndGame(){
     const [quizState, dispatch] = useContext(QuizContext);
 

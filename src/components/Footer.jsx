@@ -9,7 +9,7 @@ function Footer() {
   function nextQuestion(pg_staus) {
     dispatch({type: "CHANGE_QUESTION"});
 
-    pg_staus.style.width += 24;
+    pg_staus.style.width += 20;
   }
 
   return (
@@ -19,7 +19,7 @@ function Footer() {
           <div className="row justify-content-md-between align-items-center">
             <div className="navbar ">
               <div className="progress mt-4">
-                <div className="progress-status"  style={{width: 24}}></div>
+                <div className="progress-status" style={{width: 10}}></div>
               </div>
               {quizState.answerSelected && (
                 <div className="btn-div ">

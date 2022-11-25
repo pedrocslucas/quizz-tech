@@ -54,9 +54,7 @@ function Home() {
 
                   <button className="btn-primary col-4 mt-3" onClick={() => dispatch({type: "CHOOSE_LEVEL", payload: "Difícil"})}>Difícil</button>
 
-                  <div className="btn-div ">
-                    <button className="btn-confirm" onClick={() => dispatch({type: "START_GAME"})}>Vamos Lá</button>
-                  </div>
+                  
                 </form>
               </div>
             </div>
