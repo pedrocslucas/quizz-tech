@@ -6,7 +6,7 @@ function Navbar() {
     <>
       <div className="navbar">
         <div className="container">
-          <div className="minilogo">
+          <div className="minilogo" onClick={() => window.location.reload()}>
             <svg
               width="150"
               height="122"

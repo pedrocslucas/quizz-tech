@@ -7,31 +7,23 @@ function Footer() {
 
   function nextQuestion() {
     dispatch({ type: "CHANGE_QUESTION" });
-
-    let status = document.getElementByiD('Progress');
-    status.style.width += 20;
   }
 
   return (
     <>
-      <div className="foot-bar">
-        <div className="container">
-          <div className="row justify-content-md-between align-items-center">
-            <div className="navbar ">
-              <div className="progress mt-4">
-                <div itemID="Progress" className="progress-status"></div>
+      <div className="foot-bar  ">
+        <div className="container ">
+          <div className="row justify-content-center">
+            {quizState.answerSelected && (
+              <div className="footer-bef col-sm-6">
+                <button
+                  className="footer-btn mt-4"
+                  onClick={() => nextQuestion()}
+                >
+                  Próxima
+                </button>
               </div>
-              {quizState.answerSelected && (
-                <div className="btn-div ">
-                  <button
-                    className="footer-btn mt-3"
-                    onClick={() => nextQuestion()}
-                  >
-                    Próxima
-                  </button>
-                </div>
-              )}
-            </div>
+            )}
           </div>
         </div>
       </div>
