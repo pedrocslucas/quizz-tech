@@ -7,7 +7,7 @@
 
 ### Autores
 - [@Macaury Carvalho](https://www.github.com/macaury)
-- [@Pedro Lucas](https://github.com/pedrocslucas)
+- [@Pedro Lucas](https://www.github.com/pedrocslucas)
 
 # QuiZz Tech
 
